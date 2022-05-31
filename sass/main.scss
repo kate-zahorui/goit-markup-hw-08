@@ -1,0 +1,21 @@
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/services";
+@import "./components/team";
+@import "./components/soc-list";
+@import "./components/clients";
+
+@import "./components/portfolio-filters";
+@import "./components/portfolio-works";
+
+@import "./components/footer";
+@import "./components/footer-form";
+@import "./components/modal";
+@import "./components/modal-form";

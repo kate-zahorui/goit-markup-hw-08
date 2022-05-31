@@ -1,0 +1,18 @@
+.logo {
+	display: flex;
+	margin-right: 93px;
+	color: #000000;
+	font-family: $secondary-font, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+}
+
+.logo-accent {
+	color: $accent-color;
+}
+
+footer .logo {
+	margin-bottom: 20px;
+	color: #ffffff;
+}
