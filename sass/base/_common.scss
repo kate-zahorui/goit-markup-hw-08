@@ -9,20 +9,68 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+
+	@include mobile {
+		width: 480px;
+	}
+
+	@include tablet {
+		width: 768px;
+	}
+
+	@include desktop {
+		width: 1200px;
+	}
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include mobile {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .section__title {
-	margin-bottom: 50px;
-	font-size: 36px;
+	margin-bottom: 30px;
+	font-size: 28px;
 	line-height: 1.17;
 	text-align: center;
+
+	@include mobile {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+		margin-bottom: 50px;
+		font-size: 36px;
+	}
+}
+
+.section__list {
+	@include mobile {
+	}
+
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	@include desktop {
+	}
 }

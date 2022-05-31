@@ -4,11 +4,36 @@ footer {
 }
 
 .footer {
-	display: flex;
+	@include mobile {
+	}
+
+	@include tablet {
+		display: flex;
+	}
+
+	@media screen and (min-width: 769px) and (max-width: 1199px) {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	@include desktop {
+	}
 }
 
 .footer-address {
-	margin-right: 70px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include desktop {
+		margin-right: 70px;
+	}
 }
 
 address {
@@ -32,10 +57,19 @@ footer .contacts-item:first-child {
 }
 
 .footer-soc-container {
-	margin-right: 93px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+	}
 }
 
-.footer-title {
+.footer__title {
 	margin-top: 12px;
 	margin-bottom: 20px;
 	font-size: 14px;

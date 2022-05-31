@@ -1,5 +1,27 @@
+.footer-submit {
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+		margin: 0 auto;
+	}
+	@include desktop {
+		margin-left: auto;
+	}
+}
+
 .footer-form {
-	display: flex;
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
+
+	@include mobile {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+		display: flex;
+	}
 }
 
 .footer-input {
@@ -22,14 +44,24 @@
 		line-height: 1.25;
 		letter-spacing: 0.03em;
 	}
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
 }
 
 .footer-button-box {
 	position: relative;
-	margin-left: 12px;
+	display: block;
 	height: 50px;
+	max-width: 200px;
+	margin: 0 auto;
 	background: $accent-color;
 	border-radius: 4px;
+
+	@include desktop {
+		margin-left: 12px;
+	}
 }
 
 .footer-button {
