@@ -13,9 +13,6 @@
 	background-size: cover;
 	text-align: center;
 
-	@include mobile {
-	}
-
 	@include tablet {
 		height: 400px;
 		max-width: 768px;
@@ -39,12 +36,6 @@
 	line-height: 1.62;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-
-	@include mobile {
-	}
-
-	@include tablet {
-	}
 
 	@include desktop {
 		max-width: 696px;

@@ -13,12 +13,6 @@
 		text-align: center;
 	}
 
-	@include mobile {
-	}
-
-	@include tablet {
-	}
-
 	@include desktop {
 		display: flex;
 	}
@@ -34,13 +28,12 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-	@include mobile {
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
 	}
-
 	@include tablet {
 		width: 450px;
 	}
-
 	@include desktop {
 		width: 358px;
 	}
@@ -54,10 +47,6 @@
 		font-size: 16px;
 		line-height: 1.25;
 		letter-spacing: 0.03em;
-	}
-
-	@media screen and (max-width: 1199px) {
-		margin-bottom: 20px;
 	}
 }
 

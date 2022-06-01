@@ -11,9 +11,6 @@
 		}
 	}
 
-	@include mobile {
-	}
-
 	@include tablet {
 		margin: 15px;
 		flex-basis: calc(100% / 2 - 30px);

@@ -2,24 +2,20 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	// align-content: flex-start;
-
 	margin-bottom: 50px;
 
-	@include mobile {
+	@media screen and (max-width: 767px) {
+		margin-top: -15px;
 	}
 
 	@include tablet {
 		justify-content: center;
 	}
-
-	@include desktop {
-	}
 }
 
 .filters-item {
 	@media screen and (max-width: 767px) {
-		margin-bottom: 15px;
+		margin-top: 15px;
 	}
 	&:not(:last-child) {
 		margin-right: 8px;

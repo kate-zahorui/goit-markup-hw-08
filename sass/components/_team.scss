@@ -10,9 +10,6 @@
 		}
 	}
 
-	@include mobile {
-	}
-
 	@include tablet {
 		margin: 15px;
 		flex-basis: calc(100% / 2 - 30px);
@@ -24,24 +21,14 @@
 }
 
 .team-member__info {
-	// width: 270px;
 	width: 100%;
-	// padding: 30px 122px 24px;
 	padding-top: 30px;
 	padding-bottom: 24px;
 	background-color: $white-color;
 	border-radius: 0px 0px 4px 4px;
 	text-align: center;
 
-	@include mobile {
-	}
-
-	@include tablet {
-		// padding: 30px 74px 24px 74px;
-	}
-
 	@include desktop {
-		// padding: 30px 32px;
 		padding-bottom: 32px;
 	}
 }

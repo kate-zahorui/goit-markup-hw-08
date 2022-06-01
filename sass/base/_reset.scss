@@ -28,3 +28,9 @@ p {
 img {
 	display: block;
 }
+
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
