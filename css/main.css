@@ -27,6 +27,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .is-hidden {
@@ -396,16 +398,26 @@ footer .logo {
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_m.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_m2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
-    height: 400px;
     max-width: 768px;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_t.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_t2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -414,6 +426,12 @@ footer .logo {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_d.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_hero_d2x.jpg);
   }
 }
 
@@ -797,7 +815,7 @@ footer {
     display: flex;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     flex-wrap: wrap;
     justify-content: space-between;
