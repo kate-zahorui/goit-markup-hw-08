@@ -1,14 +1,32 @@
 .filters-list {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	// align-content: flex-start;
+
 	margin-bottom: 50px;
+
+	@include mobile {
+	}
+
+	@include tablet {
+		justify-content: center;
+	}
+
+	@include desktop {
+	}
 }
 
-.filters-item:not(:last-child) {
-	margin-right: 8px;
+.filters-item {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 15px;
+	}
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
 }
 
-.filter-button {
+.filters-item .filter-button {
 	padding: 6px 22px;
 	border-radius: 4px;
 	border: none;
